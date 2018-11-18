@@ -18,7 +18,7 @@ def valid_move?(board, index)
   else false
   end
 end
-def position_taken?(board, index)) == false && (on_board?(index) == true)
+def position_taken?(board, index)) == false && (on_board?(index) == true
   return true
 else
   return false
