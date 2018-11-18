@@ -6,11 +6,7 @@ puts "-----------"
 puts "#{board [6]} | #{board [7]} | #{board [8]}"
 end
 
-def turn (board)
-  puts "Please enter 1-9:"
-end
-
-def input_to_index(input)
+def input_to_index(user_input)
   index = user_input.to_i
   index -= 1
   return index
@@ -44,6 +40,7 @@ def move(board, index, character = "X")
   board[index] = character
   return board
 end
+
 def turn (board)
   puts "Please enter 1-9:"
   num = gets.chomp
